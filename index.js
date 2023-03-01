@@ -17,7 +17,6 @@ const upload = async (body) => {
   }
 };
 
-console.log(form);
 form.addEventListener("submit", async (e) => {
   try {
     const imageInput = document.querySelector("#image");
