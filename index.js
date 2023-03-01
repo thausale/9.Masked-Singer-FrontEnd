@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 
 const upload = async (body) => {
   try {
-    const response = await fetch("/upload", {
+    const response = await fetch("/api/v1/singers", {
       method: "POST",
       body: body,
       headers: {
