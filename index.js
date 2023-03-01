@@ -5,11 +5,12 @@ const upload = async (body) => {
   try {
     const response = await fetch("/upload", {
       method: "POST",
-      body: JSON.stringify(body),
+      body: body,
       headers: {
         "Content-Type": "multipart/form-data",
       },
     });
+    console.log(body);
     const data = await response.json();
     console.log(data);
   } catch (error) {
