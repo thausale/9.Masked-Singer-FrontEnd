@@ -46,7 +46,7 @@ form.addEventListener("submit", async (e) => {
 
     //Uploading the form
     await upload(formData);
-
+    res.s;
     // console.log(formData);
   } catch (error) {
     console.error(error);
