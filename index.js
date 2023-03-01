@@ -19,9 +19,9 @@ const upload = async (body) => {
 
 form.addEventListener("submit", async (e) => {
   try {
+    e.preventDefault();
     const imageInput = document.querySelector("#image");
     //   console.log(imageInput.files[0]);
-    e.preventDefault();
     console.log("form submitted");
     const body = {
       name: document.querySelector("#name").value,
