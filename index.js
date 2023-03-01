@@ -5,7 +5,7 @@ const upload = async (body) => {
   try {
     const response = await fetch("/upload", {
       method: "POST",
-      body: body,
+      body: JSON.stringify(body),
       headers: {
         "Content-Type": "multipart/form-data",
       },
